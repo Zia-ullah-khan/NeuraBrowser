@@ -1,0 +1,39 @@
+::selection {
+    background: #ffd700;
+    color: #000000;
+  }
+  
+  .redacted {
+    background-color: #ff4d4d;
+    color: #ffffff;
+    font-style: italic;
+  }
+  
+  body.translating {
+    opacity: 0.8;
+    pointer-events: none;
+  }
+  
+  button.extension-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.extension-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  body.custom-background {
+    transition: background-color 0.5s ease;
+  }
+  

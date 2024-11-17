@@ -1,0 +1,8 @@
+{
+  "name": "chrome-ai-challenge",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@google/generative-ai": "^1.0.0"
+  }
+}

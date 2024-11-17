@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "NeuraBrowser",
+  "version": "1.0",
+  "description": "A versatile AI-driven Chrome extension for enhanced web accessibility, content summarization, privacy, productivity, and knowledge management.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "logo.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["bundle.js"],
+      "css": ["styles/contentStyles.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "host_permissions": ["<all_urls>"],
+  "commands": {
+    "summarize_content": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S"
+      },
+      "description": "Summarize the current page content"
+    },
+    "translate_page": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+T"
+      },
+      "description": "Translate the current page content"
+    },
+    "privacy_guard_toggle": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+P"
+      },
+      "description": "Toggle privacy protection features"
+    }
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NeuraBrowser Popup</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 10px;
+      }
+      button {
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #007bff;
+        color: #ffffff;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      #languageMenu {
+        margin-top: 10px;
+        display: none;
+      }
+      select {
+        margin-top: 10px;
+        padding: 5px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>NeuraBrowser</h2>
+    <button id="summarizeButton">Summarize Page Content</button>
+    <button id="translateButton">Translate Page</button>
+    <button id="privacyToggleButton">Toggle Privacy Protection</button>
+    
+    <div id="languageMenu">
+      <label for="languageSelect">Select Language:</label>
+      <select id="languageSelect">
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+        <option value="de">German</option>
+        <option value="zh">Chinese</option>
+        <option value="ar">Arabic</option>
+        <option value="hi">Hindi</option>
+        <option value="Pashto">Pashto</option>
+        <option value="ur-pk">Urdu</option>
+      </select>
+      <button id="confirmLanguageButton">Translate</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
