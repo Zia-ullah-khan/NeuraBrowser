@@ -1,6 +1,6 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
-const client = new GoogleGenerativeAI("AIzaSyCvM3WYZdi7fv841mMa3D6C907lSpZ9r00");
+const client = new GoogleGenerativeAI("APOI KEY");
 
 (async function () {
   document.addEventListener("mouseup", function () {
