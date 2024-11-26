@@ -1,2 +1,2 @@
 # NeuraBrowser
-A versatile AI-driven Chrome extension for enhanced web accessibility, content summarization, privacy, productivity, and knowledge management.
+NeuraBrowser is your AI-powered browser tool for quick translations and page summaries, helping you stay informed and productive effortlessly—all in one simple extension
